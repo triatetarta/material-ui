@@ -4,11 +4,12 @@ import Header from './Header';
 import Content from './Content';
 import MakeStylesComp from './MakeStylesComp';
 import ButtonComponent from './ButtonComponent';
+import Typo from './Typo';
 
 const App = () => {
   return (
     <>
-      <ButtonComponent />
+      <Typo />
     </>
     // <Grid container direction='column'>
     //   <Grid item>
