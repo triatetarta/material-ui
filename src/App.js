@@ -1,28 +1,19 @@
-import React from 'react';
-import { Grid } from '@material-ui/core';
-import Header from './Header';
-import Content from './Content';
-import MakeStylesComp from './MakeStylesComp';
-import ButtonComponent from './ButtonComponent';
-import Typo from './Typo';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Notes from './pages/Notes';
+import Create from './pages/Create';
 
 const App = () => {
   return (
-    <>
-      <Typo />
-    </>
-    // <Grid container direction='column'>
-    //   <Grid item>
-    //     <Header />
-    //   </Grid>
-    //   <Grid item container>
-    //     <Grid item xs={0} sm={2} />
-    //     <Grid item xs={12} sm={8}>
-    //       <Content />
-    //     </Grid>
-    //     <Grid item xs={0} sm={2} />
-    //   </Grid>
-    // </Grid>
+    <Router>
+      <Switch>
+        <Route exact path='/'>
+          <Notes />
+        </Route>
+        <Route path='/create'>
+          <Create />
+        </Route>
+      </Switch>
+    </Router>
   );
 };
 
