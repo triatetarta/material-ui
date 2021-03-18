@@ -1,9 +1,10 @@
 import React from 'react';
-import { Button, Typography } from '@material-ui/core';
+import { Button, Container, Typography } from '@material-ui/core';
+import KeyboardArrowRightIcon from '@material-ui/icons/KeyboardArrowRight';
 
 const Create = () => {
   return (
-    <>
+    <Container>
       <Typography
         color='textSecondary'
         variant='h6'
@@ -18,11 +19,11 @@ const Create = () => {
         type='submit'
         color='secondary'
         variant='contained'
-        disableElevation
+        endIcon={<KeyboardArrowRightIcon />}
       >
         Submit
       </Button>
-    </>
+    </Container>
   );
 };
 
