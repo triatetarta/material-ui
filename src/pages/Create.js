@@ -1,5 +1,5 @@
 import React from 'react';
-import { Typography } from '@material-ui/core';
+import { Button, Typography } from '@material-ui/core';
 
 const Create = () => {
   return (
@@ -12,6 +12,16 @@ const Create = () => {
       >
         Create a New Note
       </Typography>
+
+      <Button
+        onClick={() => console.log('Clicked yeah')}
+        type='submit'
+        color='secondary'
+        variant='contained'
+        disableElevation
+      >
+        Submit
+      </Button>
     </>
   );
 };
